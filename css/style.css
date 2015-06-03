@@ -1,0 +1,23 @@
+.container {
+	max-width: 500px;
+	margin-top: 20px;
+}
+ul {
+	list-style: none;
+	padding-left: 0px;
+	padding-top: 10px;
+}
+li {
+	padding: 7px;
+	border-bottom: rgb(231, 231, 231) 1px solid;
+}
+li:hover {
+	background-color: rgb(231, 231, 231);
+}
+i {
+	margin-left: 10px;
+}
+i:hover {
+	cursor: pointer;
+	color: red;
+}
