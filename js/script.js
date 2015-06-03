@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	$('#text').keypress(function(e) {
 		var p = e.which;
-     	if(p == 13){
+     	if(p == 13 && $('#text').val().length > 0){
          	$('#list').prepend('<li>' + $('#text').val() + '<span class="pull-right"><input type="checkbox"> <i class="glyphicon glyphicon-trash"></i></span></li>');
          	$('#text').val('');
      	}
