@@ -9,8 +9,10 @@
 		function myController($scope) {
 			$scope.tasks = ['Task 1', 'Task 2'];
 			$scope.addTask = function() {
-				$scope.tasks.unshift($scope.taskName);
-				$scope.taskName = '';
+				if($scope.taskName.length > 0) {
+					$scope.tasks.unshift($scope.taskName);
+					$scope.taskName = '';
+				}				
 			}
 			$scope.removeTask = function(task) {
 				var checkstr =  confirm('Are you sure you want to delete this?');
